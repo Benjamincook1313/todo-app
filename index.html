@@ -12,8 +12,14 @@
     <h1>Todo App</h1>
   </Header>
 
-  <ol id="todos">
-  </ol>
+  <form id="add">
+    <label for="item">
+      <input id="newTodo" type="text" placeholder="new task"/>
+    </label>
+    <button type="submit">add</button>
+  </form>
+
+  <ol id="todos"></ol>
 
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
