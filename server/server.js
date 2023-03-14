@@ -6,10 +6,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const { getTodos, addTodo } = require("./ctrl");
+const { getTodos, addTodo, updateItem } = require("./ctrl");
 
 app.get('/api/todo', getTodos);
 app.post("/api/todo", addTodo);
+app.put("/api/todo/:id", updateItem);
 
 
 const PORT = 5051;

@@ -12,7 +12,7 @@ const todos = [
   {
     id: 3,
     item: "take out garbage",
-    completed: false
+    completed: true
   }, 
   {
     id: 4,
@@ -42,5 +42,9 @@ module.exports = {
       globalId++;
       res.status(200).send(todos);
     }
+  },
+
+  updateItem: (req, res) => {
+    console.log("hit update items");
   }
 }
